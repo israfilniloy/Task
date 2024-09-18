@@ -69,7 +69,6 @@ Search for System.Data.SqlClient and install it.
 
 ## C# Code Implementation:
 ## Insert Data-
-//
 private void button1_Click(object sender, EventArgs e)
 {
     using (SqlConnection con = new SqlConnection(connectionString))
@@ -87,7 +86,7 @@ private void button1_Click(object sender, EventArgs e)
 }
 
 ## Update Data-
-\\\ private void button2_Click(object sender, EventArgs e)
+private void button2_Click(object sender, EventArgs e)
 {
     using (SqlConnection con = new SqlConnection(connectionString))
     {
@@ -113,7 +112,7 @@ private void button1_Click(object sender, EventArgs e)
 }
 
 ## Delete Data-
- \\\ private void button3_Click(object sender, EventArgs e)
+ private void button3_Click(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -137,7 +136,8 @@ private void button1_Click(object sender, EventArgs e)
         }
 
   ## Load Data-
-  \\\ private void LoadData()
+```bash
+ private void LoadData()
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -148,7 +148,7 @@ private void button1_Click(object sender, EventArgs e)
                 dataGridView1.DataSource = dt;
             }
         }
-        
+ ```       
  ## Event Handling:
 Each button (Insert, Update, Delete) has an event handler to execute its respective CRUD operation.
 The LoadData() function is called after each operation to refresh the data displayed in the grid.
