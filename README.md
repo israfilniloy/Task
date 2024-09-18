@@ -69,7 +69,7 @@ Search for System.Data.SqlClient and install it.
 
 ## C# Code Implementation:
 ## Insert Data-
-\\\ js
+//
 private void button1_Click(object sender, EventArgs e)
 {
     using (SqlConnection con = new SqlConnection(connectionString))
@@ -85,7 +85,6 @@ private void button1_Click(object sender, EventArgs e)
         LoadData(); // Refresh data
     }
 }
-\\\
 
 ## Update Data-
 \\\ private void button2_Click(object sender, EventArgs e)
