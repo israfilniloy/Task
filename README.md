@@ -31,16 +31,16 @@ Columns:
 
 ## Set Up SQL Server Database-
 
-1.Open SQL Server Management Studio (SSMS) and connect to your SQL Server instance.
-2.Create the Database:
++ Open SQL Server Management Studio (SSMS) and connect to your SQL Server instance.
++ Create the Database:
 Use the provided .sql file located in the project folder to set up the schema and insert initial data.
 Update Connection String:
-3.Find and modify the connection string in your project files:
++ Find and modify the connection string in your project files:
 SqlConnection con = new SqlConnection("Data Source=NILOY\\SQLEXPRESS02;Integrated Security=True");
 Update this to
 private readonly string connectionString = "Server=<YOUR_SERVER_NAME>;Database=<YOUR_DATABASE_NAME>;Trusted_Connection=True;";
 
-4.Create Student Information Table:
++ Create Student Information Table:
 CREATE TABLE [dbo].[UserTab] (
     [ID]   INT           NOT NULL,
     [Name] NVARCHAR (50) NULL,
@@ -49,27 +49,27 @@ CREATE TABLE [dbo].[UserTab] (
 );
 
 ## Create a C# Windows Forms Application:
-1.Open Visual Studio.
-2.Create a New Project:
++ Open Visual Studio.
++ Create a New Project:
 Select C# > Windows Forms App (.NET Framework).
 Name the project and choose a location.
 
-3.Design Your Form:
++ Design Your Form:
 Add text boxes for Student ID, Name, and Age.
 Add buttons for Insert, Update, Delete, and Search.
 Add a DataGridView to display student records.
 
-4.Configure SQL Server Connection:
++ Configure SQL Server Connection:
 Set up the connection string in your C# code
 string connectionString = "Data Source=YOUR_SERVER_NAME;Initial Catalog=StudentDB;Integrated Security=True;";
 
-5.Install SQL Server NuGet Package (if necessary):
++ Install SQL Server NuGet Package (if necessary):
 In Solution Explorer, right-click the project and select Manage NuGet Packages.
 Search for System.Data.SqlClient and install it.
 
 ## C# Code Implementation:
 ## Insert Data-
-private void button1_Click(object sender, EventArgs e)
+\\\ private void button1_Click(object sender, EventArgs e)
 {
     using (SqlConnection con = new SqlConnection(connectionString))
     {
@@ -87,7 +87,7 @@ private void button1_Click(object sender, EventArgs e)
 
 
 ## Update Data-
-private void button2_Click(object sender, EventArgs e)
+\\\ private void button2_Click(object sender, EventArgs e)
 {
     using (SqlConnection con = new SqlConnection(connectionString))
     {
@@ -113,7 +113,7 @@ private void button2_Click(object sender, EventArgs e)
 }
 
 ## Delete Data-
- private void button3_Click(object sender, EventArgs e)
+ \\\ private void button3_Click(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -137,7 +137,7 @@ private void button2_Click(object sender, EventArgs e)
         }
 
   ## Load Data-
-  private void LoadData()
+  \\\ private void LoadData()
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -158,11 +158,11 @@ The LoadData() function is called after each operation to refresh the data displ
  Database Constraints: Ensure proper validation to avoid inserting incorrect data.
 
  ## How to Run the Project:
-  1.Clone the Repository- Clone the project from the GitHub repository.
+ + Clone the Repository- Clone the project from the GitHub repository.
       (https://github.com/israfilniloy/Task.git)
- 2.Set Up the Database: Configure your SQL Server or SQLite database using the script in the .sql file.
- 3.Build the Project: Open the project in Visual Studio and build the solution.
- 4.Run the Application:  Manage user records through the Windows Forms interface. 
+ + Set Up the Database: Configure your SQL Server or SQLite database using the script in the .sql file.
+ + Build the Project: Open the project in Visual Studio and build the solution.
+ + Run the Application:  Manage user records through the Windows Forms interface. 
     Insert, update, delete, and search records in the SQL Server database.
 
 ## ScreenShots:
