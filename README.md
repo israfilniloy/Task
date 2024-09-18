@@ -1,11 +1,11 @@
-CRUD Operations in C# Windows Forms Application
+# CRUD Operations in C# Windows Forms Application
 
-Project Overview:
+## Project Overview:
 
 This project demonstrates how to implement CRUD (Insert, Update, Delete) operations using C# and SQL Server within a Windows Forms Application. 
 It provides a user-friendly interface for managing student records.
 
-Table of Contents:
+## Table of Contents:
 
 Technologies Used-
 C#: Core programming language for the Windows Forms application.
@@ -13,7 +13,7 @@ SQL Server: Used as the database to store student records.
 Windows Forms: Provides the graphical user interface (GUI) for interacting with the application.
 Visual Studio: Integrated Development Environment (IDE) for building and debugging the application.
 
-Features:
+## Features:
 
 1.Add New Users: Input user details such as User ID, Name, and Age. The new user is added to both the list and the SQL Server database.
 2.View/Search User Information: Displays all user records in a grid format, showing the user’s ID, name, and age. Users can search for records by ID.
@@ -21,7 +21,7 @@ Features:
 4.Delete User Records: Remove a user record from the database by ID, with confirmation to avoid accidental deletions.
 5.Search Users: Search for users by ID using the search bar.
 
-Schema Diagram:
+## Schema Diagram:
 Table: UserTab
 Columns:
 - ID (int, primary key)
@@ -29,7 +29,7 @@ Columns:
 - Age (float)
 
 
-Set Up SQL Server Database-
+## Set Up SQL Server Database-
 
 1.Open SQL Server Management Studio (SSMS) and connect to your SQL Server instance.
 2.Create the Database:
@@ -48,7 +48,7 @@ CREATE TABLE [dbo].[UserTab] (
     PRIMARY KEY CLUSTERED ([ID] ASC)
 );
 
-Create a C# Windows Forms Application:
+## Create a C# Windows Forms Application:
 1.Open Visual Studio.
 2.Create a New Project:
 Select C# > Windows Forms App (.NET Framework).
@@ -67,8 +67,8 @@ string connectionString = "Data Source=YOUR_SERVER_NAME;Initial Catalog=StudentD
 In Solution Explorer, right-click the project and select Manage NuGet Packages.
 Search for System.Data.SqlClient and install it.
 
-C# Code Implementation:
-Insert Data-
+## C# Code Implementation:
+## Insert Data-
 private void button1_Click(object sender, EventArgs e)
 {
     using (SqlConnection con = new SqlConnection(connectionString))
@@ -85,7 +85,7 @@ private void button1_Click(object sender, EventArgs e)
     }
 }
 
-Update Data-
+## Update Data-
 private void button2_Click(object sender, EventArgs e)
 {
     using (SqlConnection con = new SqlConnection(connectionString))
@@ -111,7 +111,7 @@ private void button2_Click(object sender, EventArgs e)
     }
 }
 
-Delete Data-
+## Delete Data-
  private void button3_Click(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -135,7 +135,7 @@ Delete Data-
             }
         }
 
-  Load Data-
+  ## Load Data-
   private void LoadData()
         {
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -148,15 +148,15 @@ Delete Data-
             }
         }
         
- Event Handling:
+ ## Event Handling:
 Each button (Insert, Update, Delete) has an event handler to execute its respective CRUD operation.
 The LoadData() function is called after each operation to refresh the data displayed in the grid.
 
- Challenges and Considerations:
+ ## Challenges and Considerations:
  Error Handling: Implement error handling for database connection issues and invalid inputs.
  Database Constraints: Ensure proper validation to avoid inserting incorrect data.
 
- How to Run the Project:
+ ## How to Run the Project:
   1.Clone the Repository- Clone the project from the GitHub repository.
       (https://github.com/israfilniloy/Task.git)
  2.Set Up the Database: Configure your SQL Server or SQLite database using the script in the .sql file.
