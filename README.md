@@ -15,11 +15,11 @@ Visual Studio: Integrated Development Environment (IDE) for building and debuggi
 
 ## Features:
 
-1.Add New Users: Input user details such as User ID, Name, and Age. The new user is added to both the list and the SQL Server database.
-2.View/Search User Information: Displays all user records in a grid format, showing the user’s ID, name, and age. Users can search for records by ID.
-3.Update User Information: Modify existing user details in the grid and save the changes to the database.
-4.Delete User Records: Remove a user record from the database by ID, with confirmation to avoid accidental deletions.
-5.Search Users: Search for users by ID using the search bar.
++ Add New Users: Input user details such as User ID, Name, and Age. The new user is added to both the list and the SQL Server database.
++ View/Search User Information: Displays all user records in a grid format, showing the user’s ID, name, and age. Users can search for records by ID.
++ Update User Information: Modify existing user details in the grid and save the changes to the database.
++ Delete User Records: Remove a user record from the database by ID, with confirmation to avoid accidental deletions.
++ Search Users: Search for users by ID using the search bar.
 
 ## Schema Diagram:
 Table: UserTab
