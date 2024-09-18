@@ -168,7 +168,9 @@ The LoadData() function is called after each operation to refresh the data displ
 
  ## How to Run the Project:
  + Clone the Repository- Clone the project from the GitHub repository.
+      ```bash
       (https://github.com/israfilniloy/Task.git)
+      ```
  + Set Up the Database: Configure your SQL Server or SQLite database using the script in the .sql file.
  + Build the Project: Open the project in Visual Studio and build the solution.
  + Run the Application:  Manage user records through the Windows Forms interface. 
