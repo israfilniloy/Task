@@ -164,6 +164,10 @@ The LoadData() function is called after each operation to refresh the data displ
  4.Run the Application:  Manage user records through the Windows Forms interface. 
     Insert, update, delete, and search records in the SQL Server database.
 
+## ScreenShots:
+
+![Screenshot 2024-09-18 183607](https://github.com/user-attachments/assets/824a89fa-bba3-4613-9cae-81b95586ef50)
+
 
 
  
