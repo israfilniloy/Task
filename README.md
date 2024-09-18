@@ -69,6 +69,7 @@ Search for System.Data.SqlClient and install it.
 
 ## C# Code Implementation:
 ## Insert Data-
+```bash
 private void button1_Click(object sender, EventArgs e)
 {
     using (SqlConnection con = new SqlConnection(connectionString))
@@ -84,8 +85,9 @@ private void button1_Click(object sender, EventArgs e)
         LoadData(); // Refresh data
     }
 }
-
+```
 ## Update Data-
+```bash
 private void button2_Click(object sender, EventArgs e)
 {
     using (SqlConnection con = new SqlConnection(connectionString))
@@ -110,8 +112,9 @@ private void button2_Click(object sender, EventArgs e)
         }
     }
 }
-
+```
 ## Delete Data-
+```bash
  private void button3_Click(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -134,7 +137,7 @@ private void button2_Click(object sender, EventArgs e)
                 }
             }
         }
-
+```
   ## Load Data-
 ```bash
  private void LoadData()
