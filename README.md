@@ -45,13 +45,14 @@ private readonly string connectionString = "Server=<YOUR_SERVER_NAME>;Database=<
 ```
 
 + Create Student Information Table:
+```bash  
 CREATE TABLE [dbo].[UserTab] (
     [ID]   INT           NOT NULL,
     [Name] NVARCHAR (50) NULL,
     [Age]  FLOAT (53)    NULL,
     PRIMARY KEY CLUSTERED ([ID] ASC)
 );
-
+```
 ## Create a C# Windows Forms Application:
 + Open Visual Studio.
 + Create a New Project:
