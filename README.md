@@ -36,9 +36,13 @@ Columns:
 Use the provided .sql file located in the project folder to set up the schema and insert initial data.
 Update Connection String:
 + Find and modify the connection string in your project files:
+```bash
 SqlConnection con = new SqlConnection("Data Source=NILOY\\SQLEXPRESS02;Integrated Security=True");
-Update this to
+```
+Update this to-
+```
 private readonly string connectionString = "Server=<YOUR_SERVER_NAME>;Database=<YOUR_DATABASE_NAME>;Trusted_Connection=True;";
+```
 
 + Create Student Information Table:
 CREATE TABLE [dbo].[UserTab] (
@@ -61,7 +65,9 @@ Add a DataGridView to display student records.
 
 + Configure SQL Server Connection:
 Set up the connection string in your C# code
+```bash
 string connectionString = "Data Source=YOUR_SERVER_NAME;Initial Catalog=StudentDB;Integrated Security=True;";
+```
 
 + Install SQL Server NuGet Package (if necessary):
 In Solution Explorer, right-click the project and select Manage NuGet Packages.
